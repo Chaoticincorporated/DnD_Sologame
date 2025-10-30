@@ -1,13 +1,12 @@
 import './App.css';
-import ProvinceContainer from './components/ProvinceContainer';
+import RegionAppPage from './components/RegionAppPage';
 import regions from './data/gameDetails';
 
 function App() {
 
   return (
     <>
-      <ProvinceContainer gameDetails={regions}
-      />
+      <RegionAppPage regionDetails={regions}/>
     </>
   )
 }

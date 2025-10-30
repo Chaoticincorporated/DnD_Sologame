@@ -1,11 +1,12 @@
 import ProvinceCard from "./ProvinceCard"
 
-export default function ProvinceContainer({gameDetails}) {
+export default function ProvinceContainer({targetRegion, SwitchRegion}) {
     return <div>
-        {gameDetails.map((region)=>(
+        <h2>{targetRegion.region}</h2>
+        {targetRegion.map((province)=>(
             <ProvinceCard
-                regionName={region.regionName}
-                provinces={region.provinces}
+                provinces={province.provinceList}
+                SwitchRegion={SwitchRegion}
             />
         ))}
     </div>

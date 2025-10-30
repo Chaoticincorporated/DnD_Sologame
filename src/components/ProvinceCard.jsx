@@ -1,8 +1,5 @@
-export default function ProvinceCard({regionName, provinces}) {
+export default function ProvinceCard({provinces}) {
     return <div>
-        <h2>{regionName}</h2>
-        {provinces.map((province)=>(
-            <p>{province.provinceName}</p>
-        ))}
+        <p>{provinces}</p>
     </div>
 }
