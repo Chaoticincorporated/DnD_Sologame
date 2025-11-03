@@ -1,5 +1,5 @@
-export default function ProvinceCard({provinces}) {
+export default function ProvinceCard({province}) {
     return <div>
-        <p>{provinces}</p>
+        <p>{province}</p>
     </div>
 }
