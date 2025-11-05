@@ -9,7 +9,7 @@ export default function ProvinceContainer({regionName, regionProvinces}) {
     return (<div>
         <h2>{regionName}</h2>
         {regionProvinces.map((province)=>(
-            <ProvinceCard key={province.id} province={province.provinceName}/>
+            <ProvinceCard key={province.id} provinceDetails={province}/>
         ))}
     </div>);
 }

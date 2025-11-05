@@ -1,12 +1,12 @@
 import './App.css';
-import RegionAppPage from './components/RegionAppPage';
-import regions from './data/gameDetails';
+import HomePage from "./components/HomePage";
+import regions from './data/regionDetails';
 
 function App() {
 
   return (
     <>
-      <RegionAppPage regionDetails={regions}/>
+      <HomePage regionDetails={regions}/>
     </>
   )
 }

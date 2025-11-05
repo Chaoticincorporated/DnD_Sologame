@@ -30,10 +30,13 @@ export default function RegionAppPage({regionDetails}){
         });
         }
     };
-    return <div>
-        <ProvinceNavBar gameDetails={regionDetails} SwitchRegion={SwitchRegion}/>
+    return (
+    <div>
+        <div className='navBar'><ProvinceNavBar gameDetails={regionDetails} SwitchRegion={SwitchRegion}/></div>
+        <div>
         {targetRegion.map((region)=>(
             <ProvinceContainer key={region.id} regionName={region.regionName} regionProvinces={region.provinceList}/>
         ))}
-    </div>
+        </div>
+    </div>)
 }

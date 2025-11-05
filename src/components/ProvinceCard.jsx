@@ -1,5 +1,7 @@
-export default function ProvinceCard({province}) {
+export default function ProvinceCard({provinceDetails}) {
     return <div>
-        <p>{province}</p>
+        <h3>{provinceDetails.provinceName}</h3>
+        <p>Ruler: {provinceDetails.ruler}</p>
+        <p>Population: {provinceDetails.totalPops}</p>
     </div>
 }
