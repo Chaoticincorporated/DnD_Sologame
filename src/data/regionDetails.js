@@ -107,7 +107,10 @@ let regions = [
                 provincialWealthValue: "modest",
                 provincialInfastructure: 2,
                 monthlyMP: 2,
-                totalPops: 4
+                totalPops: 4,
+                popBreakDown: [
+                    {}
+                ]
             },
             {
                 provinceName: "Dralcom",

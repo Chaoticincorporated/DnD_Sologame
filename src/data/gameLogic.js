@@ -68,27 +68,28 @@ const logic = {
         ["impatient","patient"],["shy","social"],["indifferent","flirtatious"],["intellectual","simple-minded"],["decadent","moral"],
         ["driven","bored"],["arrogant","humble"],["mischievous","serious"],["timid","rowdy"],["realist","dreamer"],
         ["hopeful","nihilistic"],["merciful","harsh"],["reserved","excessive"],["content","ambitious"],["spontaneous","methodic"],
-        ["open","secretive"], ["deceptive","honest"], ["honourable", "nefarious"]
+        ["open","secretive"], ["deceptive","honest"], ["honourable", "nefarious"], ["aggressive", "passive"], ["brave","skidish"],
+        ["curious","apathetic"], ["forgiving","vengeful"], ["disciplined","lazy"], ["naive","pragmatic"]
     ],
     ambitions: [
         "empty","wealth","power","fame","knowledge","comforts","change","challange","security","freedom",
         "charity","family","adventure","pleasure","control","revenge","atonement","survival","peace","purpose"
     ],
     outlook: [
-        ["Isolationist","Expansionist"],
-        ["Pacifist","Militaristic"],
-        ["Traditionalist","Reformist"],
-        ["Pluralist","Supremacist"],
-        ["Religious","Atheist"],
-        ["Individualist","Collectivist"],
-        ["Agricultural","Mercantile"],
-        ["Superstitious","Academic"],
-        ["Constitutionalist","Authoritarian" ],
-        ["Moralist","Decadent"],
-        ["Civil","Barbaric"],
-        ["Optimistic","Nihilistic"],
-        ["Honest","Secretive"],
-        ["Orderly","Anarchy" ]
+        ["isolationist","expansionist"],
+        ["pacifist","militaristic"],
+        ["traditionalist","reformist"],
+        ["pluralist","supremacist"],
+        ["religious","atheist"],
+        ["individualist","collectivist"],
+        ["agricultural","mercantile"],
+        ["superstitious","academic"],
+        ["constitutionalist","authoritarian"],
+        ["moralist","decadent"],
+        ["civil","barbaric"],
+        ["optimistic","nihilistic"],
+        ["honest","secretive"],
+        ["orderly","anarchy" ]
     ]
     }
 };
