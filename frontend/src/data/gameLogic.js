@@ -1,3 +1,5 @@
+//npm install mongodb
+//mongodb+srv://chaosincarnated:M4x!274oo6$@dnd-details.qxe6oyf.mongodb.net/?appName=DnD-Details
 const logic = {
     provinceLogic: {
         provincialSize: 
