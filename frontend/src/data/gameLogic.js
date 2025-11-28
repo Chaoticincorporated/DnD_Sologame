@@ -75,7 +75,8 @@ const logic = {
     ],
     ambitions: [
         "empty","wealth","power","fame","knowledge","comforts","change","challange","security","freedom",
-        "charity","family","adventure","pleasure","control","revenge","atonement","survival","peace","purpose"
+        "charity","family","adventure","pleasure","control","revenge","atonement","survival","peace","purpose",
+        "propagation", "artisanship"
     ],
     outlook: [
         ["isolationist","expansionist"],

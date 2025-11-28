@@ -8,7 +8,6 @@ export default function NpcCard({
 }){
     return <div>
         <h2>{name}</h2>
-        <br />
         <p>a {gender} {race}</p> 
         <p>Outlook: {outlook}</p>
         {traits.map((trait) =>(

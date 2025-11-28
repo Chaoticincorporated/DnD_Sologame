@@ -1,6 +1,27 @@
 [
     {
         "id":"1",
+        "name":"Ardrix Aridvaine",
+        "race": "Red Dragon",
+        "gender": "male",
+        "outlook":"reformist",
+        "dominantTrait":"0",
+        "traits":[
+            {"traitName":"1","intensity":""},
+            {"traitName":"2","intensity":""},
+            {"traitName":"3","intensity":""},
+            {"traitName":"4","intensity":""},
+            {"traitName":"5","intensity":""},
+            {"traitName":"6","intensity":""},
+            {"traitName":"7","intensity":""},
+            {"traitName":"8","intensity":""},
+            {"traitName":"9","intensity":""},
+            {"traitName":"0","intensity":""}
+        ],
+        "ambitions":["freedom"]
+    },
+    {
+        "id":"2",
         "name":"Railivanithar Dralcom",
         "race": "Obsidian Dragon",
         "gender": "female",

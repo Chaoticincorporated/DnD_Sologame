@@ -27,17 +27,11 @@ const npcListSchema = new Schema({
         type: String,
         required: true
     },
-    traits: [{
-            traitName: {
-                type: String,
-                required: true
-            },
-            intensity: {
-                type: String,
-                required: true
-            }
-    }],
-    ambtions: {
+    traits: {
+        type: [Object],
+        required: true
+    },
+    ambitions: {
         type: [String],
         required: true
     }

@@ -2,11 +2,14 @@ let races = [
 {
     raceName:"Abyssal Tiefling",
     id: "rac1",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 10, 16, 275, 300],
     cultures: [
         {
             cultureName: "Bari",
             id: "cul1-1",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "expansionist", "collectivist"
             ],
@@ -23,12 +26,12 @@ let races = [
         {
             cultureName: "Rua",
             id: "cul1-2",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "expansionist", "collectivist", "militaristic"
             ],
             promotedMotives: [
-                "pleasure", "control", "adventure", "power"
+                "pleasure", "control", "power"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
             culturalTraitStrength: 6, 
@@ -40,7 +43,7 @@ let races = [
         {
             cultureName: "Alyiatian",
             id: "cul1-3",
-            generalGrowthRate: 0.004,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "religious", "collectivist"
             ],
@@ -57,7 +60,7 @@ let races = [
         {
             cultureName: "Xlivi",
             id: "cul1-4",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "isolationist", "collectivist"
             ],
@@ -74,7 +77,7 @@ let races = [
         {
             cultureName: "Syesi",
             id: "cul1-5",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "expansionist", "academic"
             ],
@@ -91,7 +94,7 @@ let races = [
         {
             cultureName: "Lieri",
             id: "cul1-6",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "expansionist", "collectivist", "academic"
             ],
@@ -108,7 +111,7 @@ let races = [
         {
             cultureName: "Yusui",
             id: "cul1-7",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "expansionist", "mercantile"
             ],
@@ -125,7 +128,7 @@ let races = [
         {
             cultureName: "Qwasyuri",
             id: "cul1-8",
-            generalGrowthRate: 0.003,
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "decedent", "collectivist", "agricultural"
             ],
@@ -145,6 +148,9 @@ let races = [
 {
     raceName:"Blazic",
     id: "rac2",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [5, 13, 125, 575, 600],
     cultures: [
         {
             cultureName: "Zahcraherian",
@@ -159,7 +165,7 @@ let races = [
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
             culturalTraitStrength: 2, 
             culturalTraits: [
-                "secretive", "cautious", "untrusting", "despondent"
+                "secretive", "cautious", "untrusting", "despondent", "pragmatic", "methodic"
             ],
             details: "Native to northern Furcais"
         },
@@ -203,6 +209,9 @@ let races = [
 {
     raceName:"Centaur",
     id: "rac3",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 9, 16, 80, 105],
     cultures: [
         {
             cultureName: "Ablieryarg",
@@ -261,9 +270,12 @@ let races = [
 {
     raceName:"Dragon",
     id: "rac4",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 15, 50, 4999, 5000],
     cultures: [
         {
-            cultureName: "",
+            cultureName: "Vethiovraki",
             id: "",
             generalGrowthRate: 0.001,
             acceptedOutlooks: [
@@ -285,6 +297,9 @@ let races = [
 {
     raceName:"Dragonborn",
     id: "rac5",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 11, 19, 80, 110],
     cultures: [
         {
             cultureName: "",
@@ -309,6 +324,9 @@ let races = [
 {
     raceName:"Drake",
     id: "rac6",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 15, 30, 120, 150],
     cultures: [
         {
             cultureName: "",
@@ -331,8 +349,11 @@ let races = [
 
 },
 {
-    raceName:"Dryad",
+    raceName:"Dryad(Senoran)",
     id: "rac7",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [6, 16, 35, 1250, "immortal"],
     cultures: [
         {
             cultureName: "Beyn",
@@ -476,11 +497,14 @@ let races = [
 {
     raceName:"Dwarf",
     id: "rac8",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [5, 15, 40, 250, 450],
     cultures: [
         {
             cultureName: "Giliric",
             id: "cul8-1",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
                 "militaristic", "mercantile"
             ],
@@ -495,174 +519,123 @@ let races = [
             details: "Native to the Glivanian mountains, Gliva Province, Southern Expanse"
         },
         {
-            cultureName: "",
+            cultureName: "Dlardrig",
             id: "cul8-2",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "orderly"
             ],
             promotedMotives: [
-                "", ""
+                "wealth", "security"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 3, 
             culturalTraits: [
-                "", ""
+                "perfectionist", "driven", "ambitious", "disciplined", "methodic", "just"
             ],
-            details: ""
+            details: "Native to the Rakoisien Mountains of eastern Khariss"
         },
         {
-            cultureName: "",
+            cultureName: "Drawm",
             id: "cul8-3",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "mercantile", "secretive"
             ],
             promotedMotives: [
-                "", ""
+                "wealth", "security"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 4, 
             culturalTraits: [
-                "", ""
+                "perfectionist", "driven", "ambitious", "secretive", "disciplined", "grounded"
             ],
-            details: ""
+            details: "Native to the Drawm vally, Cainkayt"
         },
         {
-            cultureName: "",
+            cultureName: "Amargi",
             id: "cul8-4",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "mercantile", "civil"
             ],
             promotedMotives: [
-                "", ""
+                "purpose", "knowledge"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
             culturalTraitStrength: 2, 
             culturalTraits: [
-                "", ""
+                "driven", "perfectionist", "social", "curious", "open"
             ],
-            details: ""
+            details: "Native to the Amargindale Mountains spanning the border between Ostvarskin and Kuithir"
         },
         {
-            cultureName: "",
+            cultureName: "Dorandi",
             id: "cul8-5",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "religious", "traditionalist"
             ],
             promotedMotives: [
-                "", ""
+                "atonement"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 6, 
             culturalTraits: [
-                "", ""
+                "spiritual", "just", "humble", "loyal", "nihilistic", "forgiving"
             ],
-            details: ""
+            details: "Native to northern Folxa"
         },
         {
-            cultureName: "",
+            cultureName: "Trigdamin",
             id: "cul8-6",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "expansionist", "militaristic"
             ],
             promotedMotives: [
-                "", ""
+                "revenge"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 7, 
             culturalTraits: [
-                "", ""
+                "aggressive", "arrogant", "brave", "loyal", "serious", "vengeful", "harsh"
             ],
-            details: ""
+            details: "Native to the Triga Mountains in Nekin Jar"
         },
         {
-            cultureName: "",
+            cultureName: "Zadin",
             id: "cul8-7",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "militaristic", "secretive"
             ],
             promotedMotives: [
-                "", ""
+                "control", "power"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
             culturalTraitStrength: 2, 
             culturalTraits: [
-                "", ""
+                "secretive", "humble", "calm", "pragmatic", "polite", "loyal", "serious"
             ],
-            details: ""
+            details: "Native to the Yithstharian Mountains in southern Ekervis"
         },
         {
-            cultureName: "",
+            cultureName: "Klasgarid",
             id: "cul8-8",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
-                "", ""
+                "mercantile", "reformist"
             ],
             promotedMotives: [
-                "", ""
+                "challenge", "fame"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 5, 
             culturalTraits: [
-                "", ""
+                "perfectionist", "driven", "ambitious","curious", "honest", "wanderlust"
             ],
-            details: ""
-        },
-        {
-            cultureName: "",
-            id: "cul8-9",
-            generalGrowthRate: 0.001,
-            acceptedOutlooks: [
-                "", ""
-            ],
-            promotedMotives: [
-                "", ""
-            ],
-            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
-            culturalTraits: [
-                "", ""
-            ],
-            details: ""
-        },
-        {
-            cultureName: "",
-            id: "cul8-10",
-            generalGrowthRate: 0.001,
-            acceptedOutlooks: [
-                "", ""
-            ],
-            promotedMotives: [
-                "", ""
-            ],
-            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
-            culturalTraits: [
-                "", ""
-            ],
-            details: ""
-        },
-        {
-            cultureName: "",
-            id: "cul8-11",
-            generalGrowthRate: 0.001,
-            acceptedOutlooks: [
-                "", ""
-            ],
-            promotedMotives: [
-                "", ""
-            ],
-            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
-            culturalTraits: [
-                "", ""
-            ],
-            details: ""
+            details: "Native to northern Graxa"
         }
     ]
 
@@ -670,23 +643,117 @@ let races = [
 {
     raceName:"Elf",
     id: "rac9",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [6, 15, 30, 650, 900],
     cultures: [
         {
-            cultureName: "",
-            id: "",
+            cultureName: "Lolthite",
+            id: "cul9-1",
             generalGrowthRate: 0.001,
             acceptedOutlooks: [
-                "", ""
+                "religious", "supremacist"
             ],
             promotedMotives: [
-                "", ""
+                "power", "control", "revenge"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 9, 
             culturalTraits: [
-                "", ""
+                "nefarious", "deceptive", "secretive", "vengeful", "cruel", "carnal", "ambitious", "disciplined",
+                "decadent", "selfish", "intellectual", "polite", "social", "despondent", "sadistic"
             ],
-            details: ""
+            details: "Drow elves native to the caverns beneath the Dokaal Mountains who devote themselves to Lolth"
+        },
+        {
+            cultureName: "Vhaeilistraean",
+            id: "cul9-2",
+            generalGrowthRate: 0.001,
+            acceptedOutlooks: [
+                "reformist"
+            ],
+            promotedMotives: [
+                "change", "freedom", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 6, 
+            culturalTraits: [
+                "open", "passionate", "dreamer", "hopeful", "driven", "social", "wanderlust", "mischievous",
+                "spontaneous"
+            ],
+            details: "Drow elves native to the caverns beneath the Dokaal Mountains who adhear to the ways of Vhaeraun or Eilistraee"
+        },
+        {
+            cultureName: "Avyiurian",
+            id: "cul9-3",
+            generalGrowthRate: 0.0015,
+            acceptedOutlooks: [
+                "decadent"
+            ],
+            promotedMotives: [
+                "pleasure", "comforts"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 8, 
+            culturalTraits: [
+                "curious", "open", "aggressive", "spontaneous", "excessive", "bored", "mischievous", "rowdy",
+                "decadent", "simple-minded", "flirtatious", "social", "lustful", "passionate", "loyal", "carnal"
+            ],
+            details: "Drow elves native to the caverns beneath the Dokaal Mountains who have Devoted themselves to the Agriansut"
+        },
+        {
+            cultureName: "Khrahierra",
+            id: "cul9-4",
+            generalGrowthRate: 0.001,
+            acceptedOutlooks: [
+                "militaristic", "traditionalist"
+            ],
+            promotedMotives: [
+                "family", "survival"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 6, 
+            culturalTraits: [
+                "pragmatic", "disciplined", "secretive", "aggressive", "brave", "content", "harsh", "moral",
+                "patient", "just", "untrusting", "loyal"
+            ],
+            details: "Wild elves native to the plains of Khariss and Kuithir"
+        },
+        {
+            cultureName: "Qwasirrian",
+            id: "cul9-5",
+            generalGrowthRate: 0.001,
+            acceptedOutlooks: [
+                "academic", "religious"
+            ],
+            promotedMotives: [
+                "knowledge", "purpose", "peace"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 5, 
+            culturalTraits: [
+                "curious", "forgiving", "passive", "methodic", "driven", "serious", "intellectual", "indifferent", 
+                "patient", "wanderlust", "calm", "spiritual"
+            ],
+            details: "Moon elves native to Corearux"
+        },
+        {
+            cultureName: "Eyuiliashia",
+            id: "cul9-6",
+            generalGrowthRate: 0.001,
+            acceptedOutlooks: [
+                "reformist", "collectivist"
+            ],
+            promotedMotives: [
+                "survival", "family", "pleasure"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 7, 
+            culturalTraits: [
+                "romantic", "cautious", "loyal", "passionate", "social", "flirtatious", "mischievous", "excessive",
+                "secretive", "pragmatic"
+            ],
+            details: "Moon elves native to the Barchine Isle"
         }
     ]
 
@@ -694,11 +761,14 @@ let races = [
 {
     raceName:"Ferrolith",
     id: "rac10",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 10, 21, 750, "immortal"],
     cultures: [
         {
             cultureName: "Iyralian",
             id: "cul10-1",
-            generalGrowthRate: 0.002,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "collectivist", "barbaric"
             ],
@@ -715,7 +785,7 @@ let races = [
         {
             cultureName: "Jyessian",
             id: "cul10-2",
-            generalGrowthRate: 0.002,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "individualist", "anarchy"
             ],
@@ -735,23 +805,47 @@ let races = [
 {
     raceName:"Half-Dragon",
     id: "rac11",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 12, 21, 490, 500],
     cultures: [
         {
-            cultureName: "",
-            id: "",
-            generalGrowthRate: 0.001,
+            cultureName: "Dralcomic",
+            id: "cul11-1",
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
-                "", ""
+                "civil", "reformists"
             ],
             promotedMotives: [
-                "", ""
+                "change", "purpose"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 7, 
             culturalTraits: [
-                "", ""
+                "disciplined", "honourable", "brave", "ambitious", "excessive", "harsh", "arrogant", "dreamer",
+                "indifferent", "social", "impatient", "just", "passionate", "impolite", "hot-tempered", "romantic",
+                "reckless", "carnal", "possessive", "loyal"
             ],
-            details: ""
+            details: "Native to far southern province of Ranthuk. Dralcomic Half-dragons comprise a varity of dragonic ancestries"
+        },
+        {
+            cultureName: "Ulhari",
+            id: "cul11-2",
+            generalGrowthRate: 0.003,
+            acceptedOutlooks: [
+                "decadent", "militaristic"
+            ],
+            promotedMotives: [
+                "revenge", "family"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 9, 
+            culturalTraits: [
+                "romantic", "possessive", "loyal", "untrusting", "sadistic", "calm", "lustful", "despondent",
+                "decadent", "driven", "arrogant", "serious", "harsh", "ambitious", "aggressive", "deceptive",
+                "vengeful", "disciplined", "pragmatic"
+            ],
+            details: "Native to the provinces within Ranthuk under the rulership of house Ulharkepesk. Ulhari are almost exclusively of Blue Dragon ancestry."
         }
     ]
 
@@ -759,23 +853,351 @@ let races = [
 {
     raceName:"Harpy",
     id: "rac12",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 10, 15, 65, 80],
     cultures: [
         {
-            cultureName: "",
-            id: "",
-            generalGrowthRate: 0.001,
+            cultureName: "Bivlyieri",
+            id: "cul12-1",
+            generalGrowthRate: 0.004,
             acceptedOutlooks: [
-                "", ""
+                "decadent", "religious"
             ],
             promotedMotives: [
-                "", ""
+                "family", "pleasure", "purpose"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 13, 
             culturalTraits: [
-                "", ""
+                "naive", "lazy", "curious", "open", "skidish", "spontaneous", "excessive", "bored", "mischievous",
+                "rowdy", "decadent", "simple-minded", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "slob", "sadistic", "romantic", "carnal", "possessive"
             ],
-            details: ""
+            details: "Native to the Barchine Isles"
+        },
+        {
+            cultureName: "Cyuthi",
+            id: "cul12-2",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "expansionist"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "control"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 12, 
+            culturalTraits: [
+                "naive", "aggressive", "curious", "open", "spontaneous", "excessive", "bored", "mischievous",
+                "rowdy", "decadent", "simple-minded", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "slob", "sadistic", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to CovenHome"
+        },
+        {
+            cultureName: "Darhixi",
+            id: "cul12-3",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "reformist", "religious"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 13, 
+            culturalTraits: [
+                "naive", "curious", "open", "skidish", "spontaneous", "excessive", "bored", "mischievous",
+                "rowdy", "simple-minded", "flirtatious", "social", "impatient", "loyal", "wanderlust",
+                "passionate", "slob", "kind", "romantic", "possessive", "honourable"
+            ],
+            details: "Native to Mt.Darhir, Darhir Province, Ranthuk"
+        },
+        {
+            cultureName: "Benarui",
+            id: "cul12-4",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "civil"
+            ],
+            promotedMotives: [
+                "family", "comforts", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 9, 
+            culturalTraits: [
+                "naive", "driven", "curious", "open", "brave", "spontaneous", "excessive", "mischievous",
+                "rowdy", "decadent", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "sadistic", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to the coastal provinces spanning from Benir province, Ranthuk to Kienar province, Southern Expanse"
+        },
+        {
+            cultureName: "Teinistrix",
+            id: "cul12-5",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "collectivist"
+            ],
+            promotedMotives: [
+                "family", "change"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 10, 
+            culturalTraits: [
+                "pragmatic", "lazy", "curious", "secretive", "skidish", "methodic", "excessive", "driven", "serious",
+                "rowdy", "decadent", "intellectual", "flirtatious", "social", "ambitious", "lustful", "wanderlust",
+                "passionate", "perfectionist", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to Teiniax province, Southern Expanse"
+        },
+        {
+            cultureName: "Ivanyx",
+            id: "cul12-6",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent"
+            ],
+            promotedMotives: [
+                "comforts", "pleasure", "freedom"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 7, 
+            culturalTraits: [
+                "curious", "open", "spontaneous", "excessive", "bored", "mischievous",
+                "rowdy", "decadent", "flirtatious", "social", "lustful", "wanderlust",
+                "passionate", "carnal"
+            ],
+            details: "Native to Gliva province, Southern Expanse"
+        },
+        {
+            cultureName: "Imyalia",
+            id: "cul12-7",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "religious"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 8, 
+            culturalTraits: [
+                "pragmatic", "disciplined", "curious", "secritive", "skidish", "methodic", "reserved", "bored", "mischievous",
+                "realist", "decadent", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "slob", "sadistic", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to the far southern provinces of the South Dokaal Coast"
+        },
+        {
+            cultureName: "Yui",
+            id: "cul12-8",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "militaristic", "religious"
+            ],
+            promotedMotives: [
+                "family", "revenge", "survival"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 9, 
+            culturalTraits: [
+                "pragmatic", "disciplined", "aggressive", "secretive", "brave", "methodic", "excessive", "driven", "serious",
+                "rowdy", "decadent", "realist", "ambitious", "harsh", "patient", "lustful", "grounded",
+                "passionate", "deceptive", "vengeful", "romantic", "carnal", "possessive", "loyal"
+            ],
+            details: "Native to the Yui forest in the South Dokaal Coast"
+        },
+        {
+            cultureName: "Kyarsierese",
+            id: "cul12-9",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "militaristic", "expansionist"
+            ],
+            promotedMotives: [
+                "family", "power", "control"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 12, 
+            culturalTraits: [
+                "pragmatic", "disciplined", "aggressive", "secretive", "brave", "spontaneous", "excessive", "driven", 
+                "mischievous", "rowdy", "decadent", "realist", "ambitious", "harsh", "patient", "lustful", "grounded",
+                "passionate", "deceptive", "sadistic", "cruel", "carnal", "possessive", "loyal", "nefarious"
+            ],
+            details: "Native to the Mountains of the North Dokaal Coast"
+        },
+        {
+            cultureName: "Jyrataxi",
+            id: "cul12-10",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "civil"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "change"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 7, 
+            culturalTraits: [
+                "lazy", "apathetic", "open", "skidish", "methodic", "excessive", "bored", "mischievous",
+                "decadent", "intellectual", "flirtatious", "social", "lustful", "grounded",
+                "passionate", "slob", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to the eastern provinces of Lichindow"
+        },
+        {
+            cultureName: "Yrowsatrixa",
+            id: "cul12-11",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "civil"
+            ],
+            promotedMotives: [
+                "family", "security", "control"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 8, 
+            culturalTraits: [
+                "pragmatic", "apathetic", "open", "methodic", "excessive", "driven", "mischievous",
+                "decadent", "intellectual", "flirtatious", "social", "lustful", "grounded",
+                "passionate", "harsh", "romantic", "carnal", "possessive", "cautious"
+            ],
+            details: "Native to the western provinces of Lichindow and the forests of eastern Ekervis"
+        },
+        {
+            cultureName: "Qyorax",
+            id: "cul12-12",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "religious"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "comforts"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 14, 
+            culturalTraits: [
+                "naive", "lazy", "curious", "open", "skidish", "spontaneous", "excessive", "mischievous",
+                "decadent", "simple-minded", "flirtatious", "social", "lustful", "wanderlust",
+                "passionate", "slob", "sadistic", "romantic", "carnal", "possessive", "cruel"
+            ],
+            details: "Native to Xlivzra"
+        },
+        {
+            cultureName: "Uralia",
+            id: "cul12-13",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "religious"
+            ],
+            promotedMotives: [
+                "family", "freedom"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 6, 
+            culturalTraits: [
+                "naive", "driven", "curious", "open", "brave", "spontaneous", "excessive", "mischievous",
+                "rowdy", "decadent", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to the mainland regions of Graxa"
+        },
+        {
+            cultureName: "Undrix",
+            id: "cul12-14",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "isolationist", "authoritarian"
+            ],
+            promotedMotives: [
+                "survival", "security"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 5, 
+            culturalTraits: [
+                "pragmatic", "disciplined", "open", "spontaneous", "excessive", "driven", "serious",
+                "rowdy", "decadent", "indifferent", "social", "impatient", "lustful", "grounded",
+                "passionate", "perfectionist", "sadistic", "aromantic", "carnal", "possessive"
+            ],
+            details: "Native to the islands of Graxa"
+        },
+        {
+            cultureName: "Trazyir",
+            id: "cul12-15",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "civil", "religious"
+            ],
+            promotedMotives: [
+                "family", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 9, 
+            culturalTraits: [
+                "naive", "curious", "secretive", "brave", "spontaneous", "excessive", "ambitious", "mischievous",
+                "polite", "decadent", "simple-minded", "flirtatious", "social", "arrogant", "lustful", "grounded",
+                "passionate", "dreamer", "sadistic", "romantic", "carnal", "possessive"
+            ],
+            details: "Native to the forests of Corearux"
+        },
+        {
+            cultureName: "Foli",
+            id: "cul12-16",
+           generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "religious"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "purpose"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 11, 
+            culturalTraits: [
+                "naive", "lazy", "curious", "open", "skidish", "spontaneous", "excessive", "bored", "mischievous",
+                "decadent", "intellectual", "flirtatious", "social", "impatient", "lustful", "wanderlust",
+                "passionate", "slob", "romantic", "carnal", "possessive", "forgiving"
+            ],
+            details: "Native to the northern provinces of Folxa"
+        },
+        {
+            cultureName: "Irerasixi",
+            id: "cul12-17",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "decadent", "religious"
+            ],
+            promotedMotives: [
+                "family", "pleasure", "freedom"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 9, 
+            culturalTraits: [
+                "naive", "lazy", "curious", "open", "skidish", "spontaneous", "excessive", "bored", "mischievous",
+                "rowdy", "decadent", "simple-minded", "flirtatious", "social", "impatient", "lustful", 
+                "passionate", "slob", "sadistic", "romantic", "carnal", "possessive", "optimistic"
+            ],
+            details: "Native to the southern provinces of Folxa"
+        },
+        {
+            cultureName: "Nocralese",
+            id: "cul12-18",
+            generalGrowthRate: 0.004,
+            acceptedOutlooks: [
+                "isolationist", "supremacist"
+            ],
+            promotedMotives: [
+                "pleasure", "power"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 10, 
+            culturalTraits: [
+                "disciplined", "vengeful", "secretive", "skidish", "content", "reserved", "arrogant", 
+                "decadent", "simple-minded", "indifferent", "cruel", "impatient", "lustful", "wanderlust",
+                "despondent", "perfectionist", "sadistic", "selfish", "carnal", "possessive"
+            ],
+            details: "Native to Mt.Nocral, Nocraldine province, Ostvarskin"
         }
     ]
 
@@ -783,11 +1205,14 @@ let races = [
 {
     raceName:"Human",
     id: "rac13",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 11, 19, 60, 100],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -807,11 +1232,14 @@ let races = [
 {
     raceName:"Giant",
     id: "rac14",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [10, 25, 50, 370, 400],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.0001,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -831,11 +1259,14 @@ let races = [
 {
     raceName:"Gnoll",
     id: "rac15",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 6, 11, 27, 30],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -853,13 +1284,70 @@ let races = [
 
 },
 {
-    raceName:"Goblinoid",
+    raceName:"Goblin",
     id: "rac16",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 8, 13, 45, 60],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.005,
+            acceptedOutlooks: [
+                "", ""
+            ],
+            promotedMotives: [
+                "", ""
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 2, 
+            culturalTraits: [
+                "", ""
+            ],
+            details: ""
+        }
+    ]
+
+},
+{
+    raceName:"Hobgoblin",
+    id: "rac31",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 11, 19, 60, 100],
+    cultures: [
+        {
+            cultureName: "",
+            id: "",
+            generalGrowthRate: 0.005,
+            acceptedOutlooks: [
+                "", ""
+            ],
+            promotedMotives: [
+                "", ""
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 2, 
+            culturalTraits: [
+                "", ""
+            ],
+            details: ""
+        }
+    ]
+
+},
+{
+    raceName:"Bugbear",
+    id: "rac32",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 9, 16, 55, 80],
+    cultures: [
+        {
+            cultureName: "",
+            id: "",
+            generalGrowthRate: 0.005,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -879,11 +1367,14 @@ let races = [
 {
     raceName:"Kobold",
     id: "rac17",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 11, 19, 95, 120],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -903,11 +1394,14 @@ let races = [
 {
     raceName:"Kraken",
     id: "rac18",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [15, 30, 60, 300, 700],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.0001,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -927,11 +1421,14 @@ let races = [
 {
     raceName:"Kruthik",
     id: "rac19",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [2, 5, 7, 10, 25],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.004,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -951,11 +1448,14 @@ let races = [
 {
     raceName:"Lizardfolk",
     id: "rac20",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [1, 4, 7, 60, 80],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -975,11 +1475,14 @@ let races = [
 {
     raceName:"Lycan",
     id: "rac21",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: "Depends upon their origin race",
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -999,11 +1502,14 @@ let races = [
 {
     raceName:"Minotaur",
     id: "rac22",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [2, 4, 10, 80, 200],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1023,11 +1529,14 @@ let races = [
 {
     raceName:"Orc",
     id: "rac23",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 9, 15, 45, 65],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.004,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1047,11 +1556,14 @@ let races = [
 {
     raceName:"Sahuagin",
     id: "rac24",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 12, 22, 150, 180],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.003,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1071,11 +1583,14 @@ let races = [
 {
     raceName:"Sirene",
     id: "rac25",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 10, 30, 390, 450],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1095,11 +1610,14 @@ let races = [
 {
     raceName:"Surikshal",
     id: "rac26",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 14, 22, 550, 1000],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.007,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1119,11 +1637,14 @@ let races = [
 {
     raceName:"Tabaxi",
     id: "rac27",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 11, 19, 60, 100],
     cultures: [
         {
             cultureName: "",
             id: "",
-            generalGrowthRate: 0.001,
+            generalGrowthRate: 0.002,
             acceptedOutlooks: [
                 "", ""
             ],
@@ -1143,23 +1664,63 @@ let races = [
 {
     raceName:"Troll",
     id: "rac28",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 9, 16, 65, 150],
     cultures: [
         {
-            cultureName: "",
-            id: "",
-            generalGrowthRate: 0.001,
+            cultureName: "Gloribekan",
+            id: "cul28-1",
+            generalGrowthRate: 0.0005,
             acceptedOutlooks: [
-                "", ""
+                "barbaric", "anarchy"
             ],
             promotedMotives: [
-                "", ""
+                "power", "survival"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 6, 
             culturalTraits: [
-                "", ""
+                "reckless", "hot-tempered", "sadistic", "slob", "cruel", "aromantic", "indifferent",
+                "simple-minded", "decadent", "rowdy", "harsh", "excessive", "brave", "curious", "lazy"
             ],
-            details: ""
+            details: "Native to the northern provinces of Corearux"
+        },
+        {
+            cultureName: "Jlargi",
+            id: "cul28-2",
+            generalGrowthRate: 0.0006,
+            acceptedOutlooks: [
+                "barbaric", "collectivist"
+            ],
+            promotedMotives: [
+                "propagation", "survival"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 7, 
+            culturalTraits: [
+                "reckless", "hot-tempered", "sadistic", "slob", "cruel", "carnal", "indifferent", "loyal",
+                "simple-minded", "decadent", "rowdy", "harsh", "excessive", "brave", "curious", "lazy"
+            ],
+            details: "Native to the south-western provinces of Corearux"
+        },
+        {
+            cultureName: "Luruokra",
+            id: "cul28-3",
+            generalGrowthRate: 0.0005,
+            acceptedOutlooks: [
+                "barbaric", "anarchy"
+            ],
+            promotedMotives: [
+                "power", "survival"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 5, 
+            culturalTraits: [
+                "reckless", "hot-tempered", "sadistic", "vengeful", "cruel", "aromantic", "indifferent",
+                "ambitious", "decadent", "rowdy", "harsh", "excessive", "brave", "apathetic", "disciplined"
+            ],
+            details: "Native to the south-eastern provinces of Corearux"
         }
     ]
 
@@ -1167,23 +1728,28 @@ let races = [
 {
     raceName:"Vrock",
     id: "rac29",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [3, 7, 16, 50, "immortal"],
     cultures: [
         {
-            cultureName: "",
-            id: "",
+            cultureName: "Ayrngon",
+            id: "cul29-1",
             generalGrowthRate: 0.001,
             acceptedOutlooks: [
-                "", ""
+                "supremacist", "decadent"
             ],
             promotedMotives: [
-                "", ""
+                "power", "control"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 9, 
             culturalTraits: [
-                "", ""
+                "apathetic", "vengeful", "aggressive", "spontaneous", "ambitious", "excessive", "deceptive",
+                "nihilistic", "nefarious", "serious", "arrogant", "bored", "social", "intellectual", "decadent",
+                "passionate", "lustful", "cruel", "sadistic", "untrusting", "selfish", "carnal", "possessive"
             ],
-            details: ""
+            details: "Native to the Barchine Isles"
         }
     ]
 
@@ -1191,23 +1757,47 @@ let races = [
 {
     raceName:"Yeti",
     id: "rac30",
+    //starting as infants
+    //years until[childhood, adolescence, adulthood, elder, maximum lifespan]
+    lifespan: [4, 9, 16, 50, 80],
     cultures: [
         {
-            cultureName: "",
-            id: "",
+            cultureName: "Sar",
+            id: "cul30-1",
             generalGrowthRate: 0.001,
             acceptedOutlooks: [
-                "", ""
+                "barbaric", "superstitious"
             ],
             promotedMotives: [
-                "", ""
+                "survival", "challange"
             ],
             /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
-            culturalTraitStrength: 2, 
+            culturalTraitStrength: 6, 
             culturalTraits: [
-                "", ""
+                "vengeful", "honest", "honourable", "aggressive", "brave", "spontaneous", "content", "harsh",
+                "humble", "serious", "realist", "moral", "indifferent", "patient", "just", "prude", "loyal", 
+                "spiritual"
             ],
-            details: ""
+            details: "Native to the province of Searsjach, Ranthuk"
+        },
+        {
+            cultureName: "Rakoi",
+            id: "cul30-2",
+            generalGrowthRate: 0.001,
+            acceptedOutlooks: [
+                "authoritarian", "civil"
+            ],
+            promotedMotives: [
+                "power", "family"
+            ],
+            /*culturalTraitStrength is the maximum trait points that an NPC will be assigned from the culturalTraits*/
+            culturalTraitStrength: 11, 
+            culturalTraits: [
+                "disciplined", "pragmatic", "brave", "passive", "honourable", "secretive", "methodic", "content",
+                "reserved", "merciful", "driven", "humble", "moral", "intellectual", "patient", "just", "grounded",
+                "spiritual", "loyal", "charitable"
+            ],
+            details: "Native to the Rakoisien Mountains of eastern Khariss"
         }
     ]
 
